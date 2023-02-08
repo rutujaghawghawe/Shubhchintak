@@ -1,0 +1,2 @@
+Read about CSS and how to customize the website through it.
+Create an index.html file and style.css, linked them both together and added basic styling.
