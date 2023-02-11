@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Control Elements</title>
+</head>
+<body>
+    <h3>Text</h3>
+    <label>Name</label>
+    <input type="text" size="50">
+    
+    <h3>Buttons</h3>
+
+    <input type="radio" name="color" value="#F00">
+    <label>Red</label>
+    
+    <input type="radio" name="color" value="#0F0">
+    <label>Green</label>  
+
+    <input type="radio" name="color" value="#00F">
+    <label>Blue</label><br>
+
+    <fieldset>
+        <legend>Theme color:</legend>
+        <p>
+        <input type="radio" name="color" id="red" value="#F00">
+        <label for="red">Red</label>
+        </p>
+        <p>
+        <input type="radio" name="color" id="green" value="#0F0">
+        <label for="green">Green</label>
+        </p>
+        <p>
+        <input type="radio" name="color" id="blue" value="#00F">
+        <label for="blue">Blue</label>
+        </p>
+    </fieldset>
+
+    <h3>Input Validation</h3>
+    <label>Marks</label><br>
+    <input type="number" size="6" name="marks" min="0" max="100" />
+    
+    <h3>Color</h3>
+    <label>Color</label>
+    <input type="color" name="favcolor" value="#ff0000">
+
+    <h3>Password</h3>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password">
+
+    <h3>File</h3>
+    <label>Upload a File</label>
+    <input type="file" name="fileSubmission" id="fileSubmission">
+    <input type="submit" value="Upload your file" name="submit">
+
+    <h3>Button</h3>
+    <label>Button</label>
+    <input type="button" onclick="alert('hello world!')" value="Click Me">
+
+    <h3>Submit</h3>
+    <label>Submit</label>
+    <input type="submit" value="Submit">
+  
+    <h3>Tel</h3>
+    <label>Tel</label>
+    <input type="tel">
+
+    <h3>Email</h3>
+    <label>E-mail: </label>
+    <input type="email" name="email">
+
+    <h3>Number</h3>
+    <label>Number </label>
+    <input type="number" value="0" name="quantity">
+
+    <h3>Range</h3>
+    <label>Range </label>
+    <input type="range" min="" max="" step="" />
+
+    <h3>Week</h3>
+    <label>Week</label>
+    <input type="week" />
+
+    <h3>URL</h3>
+    <label>URL</label>
+    <input type="url" name="Homepage">
+
+    <h3>Date-Time local</h3>
+    <label>Date-Time local</label>
+    <input type="datetime-local" />
+
+    <h3>Month</h3>
+    <label>Month</label>
+    <input type="month" />
+
+    <h3>Time</h3>
+    <label>Time</label>
+    <input type="time" />
+
+    <h3>Date</h3>
+    <label>Date</label>
+    <input type="date" />
+
+
+</body>
+</html>
