@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectioning Elements</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Blog Post</h1>
+            <time datetime="2016-03-13">13th March 2016</time>
+        </header>
+        <p>The article element represents a self contained article or document.</p>
+        <p>The section element represents a grouping of content.</p>
+        <section>
+            <h2>Comments <small>relating to "Blog Post"</small></h2>
+            <!-- Related comment is also a self-contained article -->
+            <article id="user-comment-1">
+                <p>Excellent!</p>
+            </article>
+         </section>
+    </article>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://google.com">Google</a></li>
+                <li><a href="https://www.yahoo.com">Yahoo!</a></li>
+                <li><a href="https://www.bing.com">Bing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Individual Blog Post</h1>
+        <p>An introduction for the post.</p>
+        <article>
+            <h2>References</h2>
+            <p>References of the post.</p>
+        </article>
+        <article>
+            <h2>Comments</h2> 
+            <p>Comments of the post.</p>
+        </article>
+    </main>
+    <footer>Footer</footer>
+             
+</body>
+</html>
