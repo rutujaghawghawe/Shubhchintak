@@ -1,0 +1,6 @@
+Data attributes were introduced in HTML5 which is supported by all modern browsers, but older browsers before
+HTML5 don't recognize the data attributes.
+However, in HTML specifications, attributes that are not recognized by the browser must be left alone and the
+browser will simply ignore them when rendering the page.
+Web developers have utilized this fact to create non-standard attributes which are any attributes not part of the
+HTML specifications.
