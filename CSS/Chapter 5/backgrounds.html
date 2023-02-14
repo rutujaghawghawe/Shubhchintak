@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+    <style>
+        .div1 {
+            background-color: red; 
+        }
+        #p1 {
+            background-color: hsla(120, 100%, 50%, .3); 
+        }
+        .linear-gradient {
+            background: linear-gradient(to left, red, rgb(0, 242, 255)); 
+        }
+        .myClass {
+            background-image: url('demo-image.png'), url('kitten.png');           
+            background-size: 100px 100px;
+            width: 600px;
+        }
+        div > div {
+            background-image: url(http://i.stack.imgur.com/r5CAq.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #ccc;
+            border: 1px solid;
+            width: 20em;
+            height: 10em;
+        }
+        div.contain {
+            background-size: contain;
+        }
+        div.cover {
+            background-size: cover;
+        }
+        div > div::after {
+            background-color: #000;
+            color: #fefefe;
+            margin: 1ex;
+            padding: 1ex;
+            opacity: 0.8;
+            display: block;
+            width: 10ex;
+            font-size: 0.7em;
+            content: attr(class);
+        }
+        .container {
+            height: 400px;
+            background-image: 
+                url(http://placekitten.com/200/250),  
+                url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+                linear-gradient(to bottom, #0973c5 0%,#e428b8 99%);
+            background-repeat: no-repeat;
+            background-position: bottom center, 0 100%;
+        }
+        body {
+            background-image: url('kitten.png');
+            background-attachment: fixed;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">This will have a red background.</div>
+    <p id="p1">This will have a green background.</p>
+    <div class="linear-gradient">This will have a gradient background.</div>
+    <div class="myClass">
+        <h1>Background Image</h1>
+        <h2>This will have a image in background.</h2>
+    </div>
+    <div>
+        <div class="contain"></div>
+        <p>The image does not cover the whole region, but it's fully contained.</p>
+    </div>
+    <div>
+        <div class="cover"></div>
+        <p>You don't see the complete image anymore, but neither do you see any background color; the image covers all of the <code>&lt;div&gt;</code>.</p>
+    </div>
+    <div class="container">Image with background gradient</div> 
+    <div class="div2">
+        <h2>Background attachment is fixed.</h2>
+
+    </div>  
+</body>
+</html>
