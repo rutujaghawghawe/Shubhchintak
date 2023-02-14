@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margins</title>
+    <style>
+        div{
+            width:80%;
+            margin:0 auto;
+        }
+        span{
+            margin: 10px;
+        }
+        .top{
+            margin: 10px;
+        }
+        .bottom{
+            margin: 20px;
+        }
+        .outer-top{
+            margin: 10px;
+        }
+        .inner-top{
+            margin: 15px;
+        }
+        .outer-bottom{
+            margin: 20px;
+        }
+        .inner-bottom{
+            margin: 25px;
+        }
+        h1 {
+            margin: 0;
+            background: #cff;
+        }
+        .div1 {
+            margin: 50px 0 0 0;
+            background: #cfc;
+        }
+        p {
+            margin: 25px 0 0 0;
+            background: #cf9;
+            margin: 0 10px 50px 100px;
+            height: 40px;
+            width: 400px;
+            background-color: red;
+        }      
+    </style>
+</head>
+<body>
+    <div>some content</div>
+    <div>some more content</div>
+    <span>some</span>
+    <span>content</span>
+    <div class="top">
+        Overlapping
+    </div>
+    <div class="bottom">
+        some more content
+    </div>
+    <div class="outer-top">
+        <div class="inner-top">Top</div>
+    </div>
+    <div class="outer-bottom">
+        <div class="inner-bottom">Bottom</div>
+    </div>
+    <h1>Title</h1>
+    <div class="div1"> Div
+        <p>Paragraph</p>
+    </div> 
+</body>
+</html>
