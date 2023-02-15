@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats</title>
+    <style>
+        img{
+            float: right;
+        }
+        .d1{
+            float: left;
+            background-color: rgb(96, 96, 255);
+            padding: 20px;
+        }
+        .d2{
+            float: left;
+            background: rgb(163, 251, 56);
+            padding: 20px;
+        }
+        .d3{
+            float: left;
+            background-color: rgb(235, 44, 206);
+            padding: 20px;
+        }
+        .div1{
+            padding: 20px;
+            border: 2px solid red;
+            float: left;
+        }
+        .div2{
+            padding: 20px;
+            border: 2px solid blue;
+            clear: left;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is some text. The float property here is used
+            on the image to make the image appear on the side of
+            the text rather than overlapping it
+            <img src="kitten.png">
+
+        </p>
+        
+    </div>
+    <div class="d1">Div 1</div>
+    <div class="d2">Div 2</div>
+    <div class="d3">Div 3</div><br><br><br>
+
+    <div class="div1">Hello World</div>
+    <div class="div2">Using clear property on this div 
+        will make it go under the upper div
+    </div>
+</body>
+</html>
