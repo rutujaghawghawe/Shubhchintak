@@ -1,0 +1,38 @@
+Section 1.1 Usage of console:
+console.log("Type message here") prints the message.
+
+It can also be used to display stored variables.
+var hi = "test"
+console.log(hi)
+
+We can log two or more variables, we can use comma to seperate them.
+var hi = "test1"
+var bye = "test2"
+console.log(hi,bye)
+
+We can log objects too, which is useful for API calls
+console.log({
+'Email' : '123@gmail.com',
+'Name' : 'Test',
+})
+
+We can also log HTML components, such as body or head etc.
+console.log(document.body)
+
+Section 1.2 Using the DOM API
+DOM stands for Document Object Model. It is an object-oriented representation of structured documents like XML
+e.g we have a paragraph with id "ok"
+<p id="ok"></p>
+We dont have any text in it. To manipulate it or add text in it, we can type
+document.getElementbyId("ok").textContent = "test"
+The first line of code will now be seen as 
+<p id="ok">test<p/>
+
+We can also do this same for manipulating the body tags
+
+We can create an alert box by the following command:
+alert('test')
+
+Also, we can use promt on screen e.g.
+var name = prompt("What is your name?");
+console.log(name);
