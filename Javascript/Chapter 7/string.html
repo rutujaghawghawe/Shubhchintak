@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+    <h2>JavaScript Strings</h2>
+    <p id="demo"></p>
+    <p id="rev"></p>
+
+    <script>
+        let name = "John Doe";  
+        document.getElementById("demo").innerHTML = text;
+
+        var foo = "Foo";
+        var bar = "Bar";
+        console.log(foo + bar); 
+        console.log(foo + " " + bar);
+
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+        document.getElementById("rev").innerHTML = reverseString('string');
+        function strcmp(a, b) {
+            if(a === b) {
+                return 0;
+            }
+            if (a > b) {
+                return 1;
+            }
+            return -1;
+        }
+        console.log(strcmp("hello", "world")); 
+        console.log(strcmp("hello", "hello")); 
+        console.log(strcmp("world", "hello")); 
+
+        var text = 'L\'albero means tree in Italian';
+        console.log( text );
+
+        var s = "one, two, three, four, five";
+        console.log(s.split(", "));
+
+        var s = "0123456789abcdefg";
+        console.log(s.slice(8, 15));
+
+        var string = "Hello, World!";
+        string = string.replace( "Hello", "Bye" );
+        console.log( string );
+
+        console.log('qwerty'.toUpperCase());
+        console.log('QWERTY'.toLowerCase());
+
+        console.log("abc".repeat(3));
+    </script>
+</body>
+</html>
