@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+<body>
+    
+    <script>
+        var animal = 'kitty';
+        var result = (animal === 'kitty') ? 'cute' : 'still nice';
+        console.log(result);
+
+        var a = 0;
+        var str = 'not a';
+        var b = '';
+        b = a === 0 ? (a = 1, str += ' test') : (a = 2);
+        console.log(b);
+
+        var a = 1;
+        if (a === 1) {
+            alert('Hey, it is 1!')
+         } 
+         else {
+            alert('Weird, what could it be?');
+         }
+
+         var animal = 'Lion';
+        switch (animal) {
+            case 'Dog':
+                console.log('I will not run since animal !== "Dog"');
+                break;
+            case 'Cat':
+                console.log('I will not run since animal !== "Cat"');
+                break;
+            default:
+                console.log('I will run since animal does not match any other case');
+        }
+
+        var i = 1;
+        if (i < 1) {
+            console.log("i is smaller than 1");
+        } 
+        else if (i < 2) {
+            console.log("i is smaller than 2");
+        } 
+        else {
+            console.log("none of the previous conditions was true");
+        }
+
+        const AnimalSays = {
+            dog () {
+                return 'woof';
+            },
+            cat () {
+                return 'meow';
+            },
+            lion () {
+                return 'roar';
+            },
+            default () {
+                return 'moo';
+            }
+        };
+        function makeAnimalSpeak (animal) {
+            const speak = AnimalSays[animal] || AnimalSays.default;
+            console.log(animal + ' says ' + speak());
+        }
+
+        var x = 10
+        x == 10 && alert("x is 10")
+        x == 11 || alert("x is not 10")
+
+    </script>
+</body>
+</html>
